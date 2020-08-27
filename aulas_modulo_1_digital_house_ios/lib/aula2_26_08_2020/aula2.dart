@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
 
-class LabelConstraints extends StatefulWidget {
+class Aula2 extends StatefulWidget {
   @override
-  _LabelConstraintsState createState() => _LabelConstraintsState();
+  _Aula2State createState() => _Aula2State();
 }
 
-class _LabelConstraintsState extends State<LabelConstraints> {
+/// A ideia de constraints não existe no Flutter, utilizamos margens e paddings
+/// para recriar o mesmo efeito.
+///
+/// Por este motivo, podemos abordar o problema utilizando um Column para
+/// garantir que o tamanho dos elementos não seja alterado entre dispositivos
+/// diferentes.
+
+class _Aula2State extends State<Aula2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
